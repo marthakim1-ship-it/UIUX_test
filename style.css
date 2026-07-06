@@ -29,12 +29,24 @@
     justify-content: center;
     align-items: center;
     padding-top: 20px; padding-bottom: 20px;
-    
+}
+/* 정답 코드 */
+
+.menu01:hover > .menu02 {
+height: 400px;
+}
+.m02-item:hover>a {
+color: blue;
+text-decoration: underline;
+}
+.m02-item:hover > .mn03-nav {
+display: flex;
 }
 .menu-ul {
     display: flex; gap: 50px;
-    
 }
+
+/* 오답코드 */
 .m01-item {
     display: flex;
     color: #000;
@@ -42,6 +54,12 @@
     font-weight: 700;
     line-height: 180%; /* 43.2px */
 }
+
+    /* 정답코드 */
+.m01-item:hover > a {
+    text-decoration: underline;
+}
+
 .menu02 {
     display: flex;
     justify-content: right;
@@ -57,14 +75,26 @@
     line-height: 180%; /* 86.4px */
 }
 /* 버튼 */
-button {
+/* 오답코드 */
+/* button {
     background-color: transparent;
     padding: auto;
     border: none; outline: none;
     color: #000;
     font-size: 20px;
     line-height: 180%; /* 43.2px */
+
+    /* 정답코드
+    padding: auto;는 CSS에서 적절한 값이 아닙니다. 
+    버튼 초기화에서는 padding: 0;으로 작성해야 하며, 
+    같은 오류가 normal.css와 style.css에 반복되어 있으므로 
+    한 번만 정리하는 것이 좋습니다. */
+button {
+    background-color: transparent;
+    padding: 0;
+    border: none; outline: none;
 }
+
 .menu02-btn {
     border: 1px solid #000000;
     width: 200px; height: 50px;

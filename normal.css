@@ -16,6 +16,13 @@ button {
     padding: auto;
     border: none; outline: none;
 }
+/* [정답]
+button {
+background-color: transparent;
+padding: 0;
+border: none; outline: none;
+}
+ */
 img {
     display: block;
 }
